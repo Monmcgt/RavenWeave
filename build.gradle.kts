@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.pianopenguin471"
-version = "2.0.0"
+version = "2.0.1"
 
 weave {
     configure {
@@ -53,8 +53,8 @@ repositories {
 }
 
 dependencies {
-    implementation("net.weavemc.api:common:1.0.0-PRE2")
-    implementation("net.weavemc:internals:1.0.0-PRE2")
+    implementation("net.weavemc.api:common:1.0.0-b.2")
+    implementation("net.weavemc:internals:1.0.0-b.2")
     compileOnly("org.spongepowered:mixin:0.8.5")
     compileOnly("org.projectlombok:lombok:1.18.30")
     annotationProcessor("org.projectlombok:lombok:1.18.30")

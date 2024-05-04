@@ -18,6 +18,10 @@ public class RavenWeave implements ModInitializer {
         EventBus.subscribe(this);
     }
 
+    @Override
+    public void init() {
+    }
+
     @SubscribeEvent
     public void onKeyPress(ravenweave.client.event.KeyboardEvent e) {
         for (Module module: Raven.moduleManager.getModules()) {

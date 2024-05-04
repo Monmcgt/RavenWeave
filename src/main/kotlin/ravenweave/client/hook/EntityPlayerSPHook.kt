@@ -16,10 +16,5 @@ internal class EntityPlayerSPHook : Hook("net/minecraft/client/entity/EntityPlay
         )
 
         cfg.computeFrames()
-
-        val classWriter = ClassWriter(ClassWriter.COMPUTE_FRAMES or ClassWriter.COMPUTE_MAXS)
-        node.accept(classWriter)
-        val bytes = classWriter.toByteArray()
-        Files.write(Path("/tmp/EntityPlayerSP.class"), bytes)
     }
 }
